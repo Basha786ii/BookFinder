@@ -1,0 +1,102 @@
+.favorites {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .favorites h2 {
+    color: #004687;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .favorites table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .favorites th, .favorites td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .favorites th {
+    background-color: #004687;
+    color: white;
+  }
+  
+  .favorites tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .favorites .view-btn,
+  .favorites .delete-btn {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .favorites .view-btn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .favorites .delete-btn {
+    background-color: #f44336;
+    color: white;
+    margin-left: 5px;
+  }
+
+  .favorites .btn{
+    display: block;
+    background-color:#004687;
+    color: white;
+    margin: 50px auto;
+    width: 10%;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-size: large;
+    box-shadow: none;
+    border: none;
+
+  }
+  
+  .favorites .view-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .favorites .delete-btn:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .favorites table, .favorites th, .favorites td {
+      font-size: 0.9rem;
+    }
+  
+    .favorites .view-btn,
+    .favorites .btn,
+    .favorites .delete-btn {
+      padding: 4px 8px;
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .favorites table, .favorites th, .favorites td {
+      font-size: 0.8rem;
+      padding: 8px;
+    }
+    
+    .favorites h2 {
+      font-size: 1.5rem;
+    }
+  }
+  

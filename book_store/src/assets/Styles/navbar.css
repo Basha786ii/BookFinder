@@ -1,0 +1,97 @@
+/* General */
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    height: 10vh;
+    background-color: #004687;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo */
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo h3 {
+    color: goldenrod;
+    text-shadow: 1px 1px 2px black;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Links */
+.navbar .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbar .links ul {
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+}
+
+.navbar .links ul li a {
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+/* Hover and Active States */
+.navbar .links ul li a:hover,
+.navbar .links ul li a.active {
+    color: goldenrod;
+    text-shadow: 1px 1px 2px black;
+    border-bottom: 2px solid goldenrod;
+}
+
+
+.logout-btn {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .logout-btn:hover {
+    text-decoration: underline;
+  }
+
+  .thank-you-message {
+    position: fixed;
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 1000;
+    opacity: 0.9;
+  }
+  
+  

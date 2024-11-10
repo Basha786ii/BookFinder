@@ -1,0 +1,66 @@
+/* Style for the overall book container */
+.book {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Style for each individual book item */
+.book-list {
+  width: 80%;
+  max-width: 400px;  /* Optional, if you want to limit the maximum width of each book item */
+  background-color: #f9f9f9;
+
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+ 
+}
+
+/* Title styling */
+.book-item h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+  text-align: center;
+  color: #333;
+}
+
+/* Author and published year styling */
+.book-item p {
+  font-size: 1em;
+  color: #555;
+  margin: 5px 0;
+  text-align: center;
+}
+
+/* Style for the "More" button */
+.book-item button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Center the button horizontally */
+.book-item button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Hover effect for the button */
+.book-item button:hover {
+  background-color: #45a049;
+}
